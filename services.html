@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services | Machine Learning Lab</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header><nav>
+<span class="logo">ML Lab · SAU</span>
+<input type="checkbox" id="menu-toggle" class="menu-check" aria-label="Toggle menu">
+<label for="menu-toggle" class="hamburger" aria-hidden="true">&#9776; Menu</label>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html" class="active">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav></header>
+<main>
+<h2>Services &amp; Activities</h2>
+<div class="cards">
+<div class="card"><h3>Research Showcase</h3><p>Highlights of ongoing research-oriented work.</p></div>
+<div class="card"><h3>Project Gallery</h3><p>Selected student and faculty projects.</p></div>
+<div class="card"><h3>Technical Activities</h3><p>Workshops, sessions and hands-on learning.</p></div>
+</div>
+
+<h2 class="sub">Project Gallery</h2>
+<div class="filters" role="radiogroup" aria-label="Filter projects by category">
+<input type="radio" name="cat" id="f-all" checked><label for="f-all">All</label>
+<input type="radio" name="cat" id="f-research"><label for="f-research">Research</label>
+<input type="radio" name="cat" id="f-student"><label for="f-student">Student Projects</label>
+<input type="radio" name="cat" id="f-workshop"><label for="f-workshop">Workshops</label>
+</div>
+<div class="cards" id="project-list">
+<div class="card project" data-category="research"><span class="tag">Research</span><h3>Image Classification Study</h3><p>Comparing convolutional neural network models on small datasets.</p></div>
+<div class="card project" data-category="research"><span class="tag">Research</span><h3>Natural Language Processing for South Asian Languages</h3><p>Text analysis and sentiment detection for regional languages.</p></div>
+<div class="card project" data-category="student"><span class="tag">Student Projects</span><h3>House Price Predictor</h3><p>A regression model that estimates prices from housing features.</p></div>
+<div class="card project" data-category="student"><span class="tag">Student Projects</span><h3>Spam Email Detector</h3><p>A classifier that separates spam from genuine email.</p></div>
+<div class="card project" data-category="workshop"><span class="tag">Workshops</span><h3>Intro to Python for ML</h3><p>Hands-on session covering NumPy, pandas and plotting.</p></div>
+<div class="card project" data-category="workshop"><span class="tag">Workshops</span><h3>Model Evaluation Basics</h3><p>Hands-on session on accuracy, precision, recall and cross-validation.</p></div>
+</div>
+</main>
+<footer>&copy; 2026 Machine Learning Lab, South Asian University · Surachana Chhetri (010) &amp; Deepanshi Mehta (096)</footer>
+</body>
+</html>

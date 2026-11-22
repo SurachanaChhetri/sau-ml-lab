@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Machine Learning Lab</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header><nav>
+<span class="logo">ML Lab · SAU</span>
+<input type="checkbox" id="menu-toggle" class="menu-check" aria-label="Toggle menu">
+<label for="menu-toggle" class="hamburger" aria-hidden="true">&#9776; Menu</label>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav></header>
+<main>
+<h2>Contact Us</h2>
+<p style="margin-bottom:16px">Machine Learning Lab, Faculty of Technology, South Asian University.</p>
+<form id="contact-form" action="thank-you.html" method="get">
+<label for="n">Name</label>
+<input id="n" name="name" type="text" placeholder="Your name" autocomplete="name" required minlength="2" maxlength="60" pattern="[A-Za-z][A-Za-z .'\-]+" title="Letters only, at least 2 characters">
+<span class="err">Please enter your name (letters only, at least 2 characters).</span>
+<label for="e">Email</label>
+<input id="e" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+<span class="err">Please enter a valid email, e.g. you@example.com.</span>
+<label for="m">Message</label>
+<textarea id="m" name="message" rows="4" placeholder="Your enquiry" required minlength="10" maxlength="500"></textarea>
+<span class="err">Your message should be at least 10 characters.</span>
+<button class="btn" type="submit">Send</button>
+</form>
+</main>
+<footer>&copy; 2026 Machine Learning Lab, South Asian University · Surachana Chhetri (010) &amp; Deepanshi Mehta (096)</footer>
+</body>
+</html>
